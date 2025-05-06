@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Header from "./components/Heager/Header"
 import { useTelegram } from "./components/hooks/useTelegram"
 
 function  App(){
 
-    const {onTodleButton, tg} = useTelegram()
+    const {onTodleButton} = useTelegram()
     
 
    
