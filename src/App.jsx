@@ -7,11 +7,7 @@ function  App(){
     const {onTodleButton, tg} = useTelegram()
     
 
-    useEffect(()=>{
-
-        tg.ready()
-    }, [])
-
+   
 
     return(<>
         <Header/>
