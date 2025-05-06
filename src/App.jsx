@@ -9,13 +9,9 @@ function  App(){
         tg.ready()
     }, [])
 
-    const onClose = () =>{
-        tg.close()
-    }
 
     return(<>
         <div>gfjggd</div>
-        <button onClick={onClose} > Закрить</button>
         </>
     )
 }
