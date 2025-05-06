@@ -1,8 +1,11 @@
 import React, { useEffect } from "react"
 import Header from "./components/Heager/Header"
-const tg = window.Telegram.WebApp
+import { useTelegram } from "./components/hooks/useTelegram"
 
 function  App(){
+
+    const {onTodleButton, tg} = useTelegram()
+    
 
     useEffect(()=>{
 
@@ -12,6 +15,7 @@ function  App(){
 
     return(<>
         <Header/>
+        <button onClick={onTodleButton} > togle</button>
         </>
     )
 }
